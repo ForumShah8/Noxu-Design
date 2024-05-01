@@ -1,9 +1,6 @@
-import Image from "next/image";
-
+import HomeFrame from './Components/mainFrame';
 export default function Home() {
   return (
-<div>
-  <h2>Noxu-Design</h2>
-</div>
+    <HomeFrame/>
   );
 }
