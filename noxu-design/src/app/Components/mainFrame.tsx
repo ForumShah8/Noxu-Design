@@ -1,6 +1,6 @@
 import bg from '../../../public/user_avatar.png';
 export default function HomeFrame(){
-    return <div className='grid grid-rows-3  border border-red-200'>
+    return <div className='grid grid-rows-3 '>
         <div className='flex items-center px-12 py-12 space-x-4 '>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -30,7 +30,7 @@ export default function HomeFrame(){
 </svg>
   </button>
 </div>
-<div className='flex items-center mt-4 space-x-4 '>
+<div className='flex  mt-4 space-x-4 '>
 <svg  className='h-10 w-10' viewBox="0 0 176 176" fill="none" xmlns="http://www.w3.org/2000/svg" stroke='currentColor'>
 <path d="M132.252 71.8955C133.758 62.2532 125.225 54.0458 115.649 55.9269L98.7423 59.2477C95.4169 59.901 91.9961 59.901 88.6706 59.2477L71.7645 55.9269C62.1882 54.0458 53.6546 62.2532 55.1612 71.8955C56.2307 78.7403 62.1263 83.7862 69.0542 83.7862H118.359C125.287 83.7862 131.182 78.7403 132.252 71.8955Z" fill="#000000"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M118.702 132.374H68.6867C55.3334 132.316 43.2265 126.979 34.3451 118.342C34.251 117 34.2031 115.645 34.2031 114.278C34.2031 94.2587 44.4763 76.6389 60.0385 66.4028L93.6943 74.368L127.352 66.4023C142.915 76.6384 153.188 94.2585 153.188 114.278C153.188 115.644 153.14 116.998 153.046 118.34C144.165 126.978 132.057 132.316 118.702 132.374Z" fill="#000000"/>
@@ -45,8 +45,113 @@ export default function HomeFrame(){
 <circle cx="112.545" cy="85.2715" r="2.97465" fill="white"/>
 <path d="M86.2578 106.593C86.2578 102.486 89.5873 99.1562 93.6944 99.1562C97.8016 99.1562 101.131 102.486 101.131 106.593V108.235C101.131 110.04 100.414 111.772 99.1368 113.049L96.499 115.687C94.9501 117.236 92.4388 117.236 90.8899 115.687L88.252 113.049C86.9752 111.772 86.2578 110.04 86.2578 108.235L86.2578 106.593Z" fill="white"/>
 </svg>
-<div>
+<div className='pt-2'>
     To find out how many accounts you have, you can use the following query:
+    <div className="flex flex-col pt-2">
+  <div className="-m-1.5 overflow-x-hidden">
+    <div className="p-1.5  inline-block align-middle">
+      <div className="border rounded-xl overflow-hidden ">
+        <table className="table-fixed max-w-full divide-y divide-gray-200 bg-white" >
+          <thead>
+            <tr>
+              <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" className="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+              </svg>
+              </th>
+              <th scope="col" className="space-x-2 flex px-6 py-3 text-start text-xs font-medium text-gray-500  ">
+                <p>
+                Name
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" className="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+              </svg>
+                </th>
+              <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500  ">Industry</th>
+              <th scope="col" className="flex space-x-2 px-6 py-3 text-end text-xs font-medium text-gray-500  ">
+                <p>
+                City
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" className="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+              </svg>
+                </th>
+              <th scope="col" className="px-6 py-3 text-end text-xs font-medium text-gray-500 ">
+                
+                State
+                
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" className="w-4 h-4 float-right ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+              </svg>
+                </th>
+              <th scope="col" className="px-6 py-3 text-end text-xs font-medium text-gray-500  max-w-24">Segment</th>
+              <th scope="col" className="px-6 py-3 text-end text-xs font-medium text-gray-500  flex space-x-2">
+                <p>Owner ID
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" className="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+              </svg>
+                </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            <tr>
+              <td className="px-6 py-2 whitespace-nowrap text-sm font-medium text-gray-800">477</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800">Abbott - Pacocha</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800 ">IT</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800 max-w-24 truncate">Colombus</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800">CO</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800 max-w-12 truncate">Entertainment</td>
+              <td className="px-6 py-2 whitespace-nowrap text-sm text-gray-800 ">7</td>
+            </tr>
+            <tr>
+                <td  className="bg-slate-50" colSpan={7} >
+                    <div className='flex justify-between mx-4 items-center text-slate-500 text-sm py-2 font-bold'>
+                        <div className='flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="w-5 h-5 mr-2 ">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+</svg>
+
+                Only X rows are shown. View full list for more
+                </div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="w-4 h-4 text-slate-300">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+</div>
+                </div>
+
+                   </td>
+                  
+            </tr>
+            <tr>
+                <td colSpan={7}>
+                    <div className='flex space-x-2 py-2 px-2'>
+                        <button className='border  p-2 border-slate-200 rounded-lg'>Show Full List</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg'>Show Query</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg'>Show Chart</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg'>Pin to Dashboard</button>
+                    </div>
+                </td>
+            </tr>
+
+
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
         </div>
