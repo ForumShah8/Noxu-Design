@@ -48,22 +48,22 @@ const dummyData = [
 ]
     return (
         <div className="bg-slate-100 h-fit  w-screen  justify-center flex">
-        <div className=' px-24 py-4 w-3/4'>
+        <div className=' px-24 py-7 w-3/4'>
         <div className="inline-flex">
-  <button className= " flex items-center  bg-white border  border-slate-300 text-orange-500 text-xs font-bold  px-2 rounded-l-lg">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+  <button className= " flex items-center  bg-white border  border-slate-300 text-orange-500 text-xs font-bold  px-1 rounded-l-md">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.0} stroke="currentColor" className="w-5 h-5">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
 </svg>
 
-  <div className='ml-2'>
+  <div className='ml-1'>
     Not Confident
     </div>
   </button>
-  <button className=" flex items-center bg-white border  border-slate-300 border-l-0 text-orange-500 text-xs font-bold py-1 px-2 rounded-r-lg">
-    <div className='mr-2'>
+  <button className=" flex items-center bg-white border  border-slate-300 border-l-0 text-orange-500 text-xs font-bold py-1 px-1 rounded-r-md">
+    <div className='mr-1'>
     Human Help
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.0} stroke="currentColor" className="w-4 h-5">
   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
 </svg>
   </button>
@@ -87,7 +87,7 @@ const dummyData = [
   <div className="">
     To find out how many accounts you have, you can use the following query:
   </div>
-  <div className="border rounded-xl overflow-auto bg-white">
+  <div className="border rounded-md overflow-auto bg-white mt-1">
     <table className="table-auto  min-w-full divide-y divide-gray-200">
       <thead className="text-gray-500 ">
         <tr>
@@ -222,10 +222,10 @@ const dummyData = [
             <tr>
                 <td colSpan={7}>
                     <div className='flex space-x-4 py-2 px-2'>
-                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Full List</button>
-                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Query</button>
-                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Chart</button>
-                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Pin to Dashboard</button>
+                        <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Full List</button>
+                        <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Query</button>
+                        <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Chart</button>
+                        <button className='border  p-2 border-slate-200 rounded-md text-xs'>Pin to Dashboard</button>
                     </div>
                 </td>
             </tr>
