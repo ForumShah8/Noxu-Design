@@ -5,7 +5,7 @@ import ChatComponent from "./chatInputComponent"
 // this is the main homeframe component 
 function HomeFrame(){
     return (
-    <div className="h-screen w-screen overflow-hidden">
+    <div className="h-screen w-screen overflow-x-hidden">
         {/* three sub components are called here */}
 
         <InputComponent/>
