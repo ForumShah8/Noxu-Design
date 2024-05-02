@@ -1,4 +1,51 @@
 export default function DataTableComponent(){
+const dummyData = [
+  {
+    " ": "477",
+    "Name": "Abbott - Pacocha",
+    "Industry":"IT",
+    "City":"Colombus",
+    "State":"CO",
+    "Segment":"Ente Some segment data",
+    "OwnerID":"7"
+  },
+  {
+    " ": "477",
+    "Name": "Abbott - Pacocha",
+    "Industry":"IT",
+    "City":"Colombus",
+    "State":"CO",
+    "Segment":"Ente Some segment data",
+    "OwnerID":"7"
+  },
+  {
+    " ": "477",
+    "Name": "Abbott - Pacocha",
+    "Industry":"IT",
+    "City":"Colombus",
+    "State":"CO",
+    "Segment":"Ente Some segment data",
+    "OwnerID":"7"
+  },
+  {
+    " ": "477",
+    "Name": "Abbott - Pacocha",
+    "Industry":"IT",
+    "City":"Colombus",
+    "State":"CO",
+    "Segment":"Ente Some segment data",
+    "OwnerID":"7"
+  },
+  {
+    " ": "477",
+    "Name": "Abbott - Pacocha",
+    "Industry":"IT",
+    "City":"Colombus",
+    "State":"CO",
+    "Segment":"Ente Some segment data",
+    "OwnerID":"7"
+  }
+]
     return (
         <div className="bg-slate-100 h-fit  w-screen  justify-center flex">
         <div className=' px-24 py-4 w-3/4'>
@@ -40,8 +87,8 @@ export default function DataTableComponent(){
   <div className="">
     To find out how many accounts you have, you can use the following query:
   </div>
-  <div className="border rounded-xl bg-white">
-    <table className="table-fixed min-w-full divide-y divide-gray-200">
+  <div className="border rounded-xl overflow-auto bg-white">
+    <table className="table-auto  min-w-full divide-y divide-gray-200">
       <thead className="text-gray-500 ">
         <tr>
         <th  className="text-sm py-2">
@@ -114,43 +161,74 @@ export default function DataTableComponent(){
         </tr>
       </thead>
       <tbody className="divide-y divide-gray-200">
-        <tr>
-        <td className="py-2 whitespace-nowrap text-sm font-medium text-gray-800 ">
+        {dummyData.map((data,index) =>(
+          <tr key={index}>
+            <td className="py-2 whitespace-nowrap text-sm font-medium text-gray-800 ">
         <p className="flex items-center justify-center">
-          477
+          {data[" "]}
           </p>
           </td>
               <td className="py-2 whitespace-nowrap text-sm text-gray-800 max-w-52">
               <p className="flex items-center justify-center">
-                Abbott - Pacocha
+                {data["Name"]}
                 </p>
                 </td>
               <td className="py-2 whitespace-nowrap text-sm text-gray-800 max-w-2">
               <p className="flex items-center justify-center">
-                IT
+                {data["Industry"]}
                 </p>
                 </td>
               <td className="py-2 text-sm text-gray-800">
               <p className="max-w-12 truncate mx-auto">
-                Colombus
+                {data["City"]}
                 </p>
                 </td>
               <td className="py-2 whitespace-nowrap text-sm text-gray-800 ">
               <p className="flex items-center justify-center">
-                CO
+                {data["State"]}
                 </p>
                 </td>
               <td className="py-2 text-sm text-gray-800  ">
               <p className=" truncate max-w-12 mx-auto">
-                Entertainment
+                {data["Segment"]}
                 </p>
                 </td>
               <td className="py-2 whitespace-nowrap text-sm text-gray-800 ">
               <p className="flex items-center justify-center">
-                7
+                {data["OwnerID"]}
                 </p>
                 </td>
-        </tr>
+          </tr>
+        ))}
+         <tr>
+                <td  className="bg-slate-50" colSpan={7} >
+                    <div className='flex justify-between mx-4 items-center text-slate-500 text-sm py-2 font-bold'>
+                        <div className='flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="w-5 h-5 mr-2 ">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+</svg>
+
+                Only X rows are shown. View full list for more
+                </div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="w-4 h-4 text-slate-300">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+</button>
+                </div>
+
+                   </td>
+                  
+            </tr>
+            <tr>
+                <td colSpan={7}>
+                    <div className='flex space-x-4 py-2 px-2'>
+                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Full List</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Query</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Show Chart</button>
+                        <button className='border  p-2 border-slate-200 rounded-lg text-xs'>Pin to Dashboard</button>
+                    </div>
+                </td>
+            </tr>
       </tbody>
     </table>
   </div>
