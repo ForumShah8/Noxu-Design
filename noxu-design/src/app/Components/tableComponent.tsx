@@ -91,7 +91,7 @@ const dummyData = [
       <div className="">
         To find out how many accounts you have, you can use the following query:
       </div>
-      <div className="border rounded-md overflow-auto bg-white mt-1 ">
+      <div className="border rounded-md overflow-auto bg-white mt-2 ">
         <table className="table-auto  min-w-full divide-y divide-gray-200 ">
           <thead className="text-slate-500">
             <tr>
@@ -216,10 +216,10 @@ const dummyData = [
             <tr>
               <td colSpan={7}>
                 <div className='flex space-x-4 py-2 px-2'>
-                  <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Full List</button>
-                  <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Query</button>
-                  <button className='border  p-2 border-slate-200 rounded-md text-xs'>Show Chart</button>
-                  <button className='border  p-2 border-slate-200 rounded-md text-xs'>Pin to Dashboard</button>
+                  <button className='border  p-2 border-slate-300 rounded-md text-xs'>Show Full List</button>
+                  <button className='border  p-2 border-slate-300 rounded-md text-xs'>Show Query</button>
+                  <button className='border  p-2 border-slate-300 rounded-md text-xs'>Show Chart</button>
+                  <button className='border  p-2 border-slate-300 rounded-md text-xs'>Pin to Dashboard</button>
                 </div>
               </td>
             </tr>
