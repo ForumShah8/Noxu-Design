@@ -93,7 +93,7 @@ const dummyData = [
       </div>
       <div className="border rounded-md overflow-auto bg-white mt-1 ">
         <table className="table-auto  min-w-full divide-y divide-gray-200 ">
-          <thead className="text-gray-500">
+          <thead className="text-slate-500">
             <tr>
             <th scope="col" className="text-sm py-2 px-6">
               <p className="flex items-center">
@@ -105,7 +105,7 @@ const dummyData = [
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-6">
-              <p className="flex items-center">
+              <p className="flex items-center font-normal">
               Name
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                   stroke="currentColor" aria-hidden="true" className="w-4 h-4">
@@ -115,12 +115,12 @@ const dummyData = [
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-6">
-              <p className="flex items-center ">
+              <p className="flex items-center font-normal">
               Industry
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-4">
-              <p className="flex items-center">
+              <p className="flex items-center font-normal">
               City
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                   stroke="currentColor" aria-hidden="true" className="w-4 h-4">
@@ -130,7 +130,7 @@ const dummyData = [
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-4">
-              <p className="flex items-center">
+              <p className="flex items-center font-normal">
               State
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                   stroke="currentColor" aria-hidden="true" className="w-4 h-4">
@@ -140,12 +140,12 @@ const dummyData = [
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-4">
-              <p className="flex items-center">
+              <p className="flex items-center font-normal">
               Segment
               </p>
             </th>
             <th scope="col" className="text-sm py-2 px-4">
-              <p className="flex items-center">
+              <p className="flex items-center font-normal">
               Owner ID
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                   stroke="currentColor" aria-hidden="true" className="w-4 h-4">
