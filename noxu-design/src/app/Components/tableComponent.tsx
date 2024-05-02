@@ -1,6 +1,6 @@
 export default function DataTableComponent(){
     return (
-        <div className="bg-slate-100 row-span-5 w-screen -mt-7 h-fit justify-center flex">
+        <div className="bg-slate-100 h-fit row-span-9 w-screen  justify-center flex">
         <div className=' px-24 py-4 w-3/4'>
         <div className="inline-flex">
   <button className= " flex items-center  bg-white border  border-slate-300 text-orange-500 text-xs font-bold  px-2 rounded-l-lg">
