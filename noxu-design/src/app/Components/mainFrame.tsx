@@ -5,7 +5,7 @@ function HomeFrame(){
     return (
 
     // <div className='grid grid-rows-12 auto-rows-min gap-0 h-screen overflow-y-hidden'>
-    <div className="container h-screen overflow-hidden">
+    <div className="h-screen w-screen overflow-hidden mx-auto">
         <InputComponent/>
         <DataTableComponent/>
         <ChatComponent/>
